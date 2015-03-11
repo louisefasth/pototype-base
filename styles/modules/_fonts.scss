@@ -1,0 +1,55 @@
+/*
+Fonts
+-------------------------------------------------*/
+
+html{
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif, helvetica;
+    font-size: 16px;
+}
+
+body, p{
+    font-size: 0.875rem;
+    color: $medium-grey;
+    line-height: 1.3;
+}
+
+input{
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif, helvetica;
+}
+
+h1{
+    font-size: 3.125rem; /* 50px */
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-size: 2.375rem; /* 38px */
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-size: 1.5rem; /* 20px */
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4{
+    font-size: 1.125rem; /* 18px */
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5{
+    font-size: 1rem; /* 16px */
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B' sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+

@@ -1,0 +1,139 @@
+/*------------------------------------------------
+GRID VARIABLES AND FUNCTIONS
+------------------------------------------------*/
+@mixin clearfix() {
+    *zoom:1;
+
+    &:before,
+    &:after {
+        content:"";
+        display:table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+
+/*------------------------------------------------
+GRID 
+------------------------------------------------*/
+
+
+$total-width: 100%;
+$gutter: 5%;
+
+body {
+    width: 100%;
+    @include clearfix();
+}
+
+@mixin column($columns) {
+    float: left;
+    width: (($total-width - $gutter) / $columns);
+    margin-right: $gutter / ($columns - 1);
+
+    &:last-child {
+        margin-right: 0; 
+    }
+
+    @if($columns == 1) {
+        width: 100%;
+    }
+}
+
+@mixin columns($columns, $margin:5%) { 
+    float:left;
+
+    @if($columns == 12) { 
+        width: 100%; 
+        margin-right: 0; 
+    } 
+
+    @else if($columns == 11) { 
+        width: 91.66666667% - $margin; 
+        margin-right: $margin;
+    } 
+
+    @else if($columns == 10) { 
+        width: 83.33333333% - $margin; 
+        margin-right: $margin;
+    } 
+
+    @else if($columns == 9) { 
+        width: 75% - $margin; 
+        margin-right: $margin;
+    } 
+
+    @else if($columns == 8) { 
+        width: 66.66666667% - $margin; 
+        margin-right: $margin;
+    } 
+
+    @else if($columns == 7) { 
+        width: 58.33333333% - $margin; 
+        margin-right: $margin; 
+    } 
+
+    @else if($columns == 6) { 
+        width: 50% - $margin; 
+        margin-right: $margin; 
+    } 
+
+    @else if($columns == 5) { 
+        width: 41.66666667% - $margin; 
+        margin-right: $margin; 
+    } 
+
+    @else if($columns == 4) { 
+        width: 33.33333333% - $margin; 
+        margin-right: $margin; 
+    }
+
+    @else if($columns == 3) { 
+        width: 25% - $margin; 
+        margin-right: $margin; 
+    } 
+
+    @else if($columns == 2) {
+        width: 16.66666667% - $margin; 
+        margin-right: $margin; 
+    } 
+
+    @else if($columns == 1) { 
+        width: 8.33333333% - $margin; 
+        margin-right: $margin; 
+    } 
+}
+
+
+/*------------------------------------------------
+BREAKPOINTS
+------------------------------------------------*/
+
+@mixin breakpoint($point) {
+
+    @if $point == xlarge {
+        @media (max-width: 1400px) { @content; }
+    }
+
+    @if $point == large {
+        @media (max-width: 1024px) { @content; }
+    }
+
+    @else if $point == medium {
+        @media (max-width: 768px)  { @content; }
+    }
+
+    @else if $point == small {
+        @media (max-width: 700px)  { @content; }
+    }
+
+    @else if $point == xsmall {
+        @media (max-width: 550px)  { @content; }
+    }
+
+    @else if $point == tiny {
+        @media (max-width: 320px)  { @content; }
+    }
+
+}

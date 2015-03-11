@@ -1,0 +1,38 @@
+/*
+Theme: FAR Akademi
+Author: Ziggy
+*/
+
+
+/*
+Imports
+--------------------------------------------------------*/
+@import "modules/colors";
+
+@import "modules/normalize";
+@import "modules/reset";
+
+@import "modules/fonts";
+@import "modules/grid";
+@import "modules/mixins";
+
+
+
+
+/*--------------------------------------------------------*/
+
+body{
+    background: #fff;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    clear: both;
+
+    .content{
+        max-width: 940px;
+        margin: 0 auto;    
+    }
+}
+
