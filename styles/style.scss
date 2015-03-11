@@ -12,17 +12,18 @@ Imports
 @import "modules/normalize";
 @import "modules/reset";
 
-@import "modules/fonts";
+
 @import "modules/grid";
 @import "modules/mixins";
 
-
+@import "partials/header";
+@import "partials/footer";
 
 
 /*--------------------------------------------------------*/
 
 body{
-    background: #fff;
+    background: $background;
 }
 
 .container{
@@ -30,7 +31,7 @@ body{
     margin: 0 auto;
     clear: both;
 
-    .content{
+    section{
         max-width: 940px;
         margin: 0 auto;    
     }
