@@ -8,6 +8,7 @@ Author: Ziggy
 Imports
 --------------------------------------------------------*/
 @import "modules/colors";
+@import "modules/fonts";
 
 @import "modules/normalize";
 @import "modules/reset";
@@ -19,6 +20,10 @@ Imports
 @import "partials/header";
 @import "partials/footer";
 
+
+@import "partials/navigation";
+@import "partials/filtering";
+@import "partials/boxes";
 
 /*--------------------------------------------------------*/
 

@@ -1,0 +1,36 @@
+/*
+Filtering
+--------------------------------------------------------*/
+
+
+.filters {
+	with:100%;
+	overflow:hidden;
+
+	ul {
+		li {
+			display:inline-block;
+			float:left;
+			padding:8px 20px 8px 25px;
+			border:1px solid darken(#efefef,10%);
+			margin-right:8px;
+
+				a {
+					&:before {
+						width:10px;
+						height:10px;
+						border-radius:50%;
+						border:1px solid darken(#efefef,20%);
+						position:absolute;
+						content:'';
+						top:4px;
+						left:-18px;
+					}
+
+					text-decoration:none;
+					color:$text-color;
+					position:Relative;
+				}
+			}
+		}
+}

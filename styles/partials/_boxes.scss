@@ -1,0 +1,14 @@
+/*
+Filtering
+--------------------------------------------------------*/
+
+
+.boxes {
+	with:100%;
+	overflow:hidden;
+
+	.boxy-box {
+		background-color:white;
+		@include columns(3, $margin:5%);
+	}
+}
