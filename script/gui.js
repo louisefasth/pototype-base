@@ -26,7 +26,6 @@ $(function() {
   				if (catList.length <= 0) {
 		  			
 		  				$this.addClass('active');	
-		  		
 
 		  		}
 
