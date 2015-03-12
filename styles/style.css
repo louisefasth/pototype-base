@@ -495,6 +495,8 @@ Filtering
         margin-right: 25px; }
         .boxes .boxy-box:nth-child(4) {
           margin-right: 0; } }
+    .boxes .boxy-box.cat-hide {
+      display: none; }
     .boxes .boxy-box h4 {
       font-size: 20px;
       font-weight: 200;
