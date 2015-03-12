@@ -434,11 +434,13 @@ Filtering
     overflow: hidden; }
     .filters ul li {
       display: inline-block;
-      padding: 8px 20px 8px 25px;
-      margin-right: 8px; }
+      padding: 8px 20px 8px 40px;
+      margin-right: 8px;
+      text-align: left; }
       .filters ul li.filterbox {
         border: 1px solid #a3a3a3;
-        transition: all 0.5s; }
+        transition: all 0.5s;
+        min-width: 100px; }
         .filters ul li.filterbox.active {
           background-color: #ec3387;
           border: 1px solid #eb2e84; }
@@ -452,14 +454,13 @@ Filtering
           color: #bcbcbc;
           position: Relative; }
           .filters ul li.filterbox a:before {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
+            width: 20px;
+            height: 20px;
             border: 1px solid #a3a3a3;
             position: absolute;
             content: '';
-            top: 4px;
-            left: -18px; }
+            top: 0px;
+            left: -34px; }
 
 /*
 Filtering
@@ -468,14 +469,25 @@ Filtering
   background-color: #f3f3f3;
   padding: 40px 0;
   overflow: hidden; }
+  .box-section .box-label {
+    font-family: "Open sans", "Source sans pro", "Arial";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #aaa;
+    letter-spacing: 0.05em;
+    padding: 30px 0 30px 0;
+    text-align: center; }
 
 .boxes {
   with: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E5E5E5; }
   .boxes .boxy-box {
     background-color: white;
     width: 100%;
-    min-height: 300px; }
+    min-height: 300px;
+    position: relative; }
     @media (min-width: 768px) {
       .boxes .boxy-box {
         width: calc(25% - 25px);
@@ -483,6 +495,32 @@ Filtering
         margin-right: 25px; }
         .boxes .boxy-box:nth-child(4) {
           margin-right: 0; } }
+    .boxes .boxy-box h4 {
+      font-size: 20px;
+      font-weight: 200;
+      padding-bottom: 10px; }
+    .boxes .boxy-box .btn-area {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px; }
+    .boxes .boxy-box button {
+      float: left;
+      width: calc(50% - 5px);
+      text-shadow: none;
+      border: none;
+      box-shadow: none;
+      padding: 8px 10px;
+      border-radius: 4px; }
+      .boxes .boxy-box button:nth-child(2) {
+        float: right; }
+      .boxes .boxy-box button.pink {
+        background-color: #ce1468;
+        color: white;
+        font-size: 16px; }
+      .boxes .boxy-box button.green {
+        background-color: #9fc776;
+        color: white; }
 
 /*
 Hero
@@ -499,6 +537,12 @@ Buttons
 /*--------------------------------------------------------*/
 body {
   background: #ffffff; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 .container {
   max-width: 1440px;

@@ -34,6 +34,13 @@ body {
     background: $background;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;

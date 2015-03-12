@@ -22,13 +22,15 @@ Filtering
 
 		li {
 			display:inline-block;
-			padding:8px 20px 8px 25px;
+			padding:8px 20px 8px 40px;
 			margin-right:8px;
+			text-align: left;
 
 
 			&.filterbox {
 				border:1px solid darken(#efefef,30%);
 				transition: all 0.5s;
+				min-width: 100px;
 
 
 				&.active {
@@ -49,14 +51,14 @@ Filtering
 
 				a {
 					&:before {
-						width:10px;
-						height:10px;
-						border-radius:50%;
+						width:20px;
+						height:20px;
+						//border-radius:50%;
 						border:1px solid darken(#efefef,30%);
 						position:absolute;
 						content:'';
-						top:4px;
-						left:-18px;
+						top:0px;
+						left:-34px;
 					}
 
 					text-decoration:none;
