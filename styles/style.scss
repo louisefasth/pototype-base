@@ -19,25 +19,30 @@ Imports
 
 @import "partials/header";
 @import "partials/footer";
+@import "partials/hero";
 
 
 @import "partials/navigation";
 @import "partials/filtering";
 @import "partials/boxes";
+@import "partials/cart";
+@import "partials/buttons";
 
 /*--------------------------------------------------------*/
 
-body{
+body {
     background: $background;
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
     clear: both;
+    padding: 0 40px;
+    position: relative;
 }
-
-section{
+ 
+.content-sections {
     max-width: 940px;
     margin: 0 auto;    
 }

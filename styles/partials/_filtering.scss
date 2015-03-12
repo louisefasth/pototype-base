@@ -6,21 +6,53 @@ Filtering
 .filters {
 	with:100%;
 	overflow:hidden;
+	text-align: center;
+
+	.filter-label {
+		color:$text-color;
+        font-size: 20px;
+        font-weight: 200;
+	}
 
 	ul {
+		margin: 8px 0;
+		overflow: hidden;
+
+
+
 		li {
 			display:inline-block;
-			float:left;
 			padding:8px 20px 8px 25px;
-			border:1px solid darken(#efefef,10%);
 			margin-right:8px;
+
+
+			&.filterbox {
+				border:1px solid darken(#efefef,30%);
+				transition: all 0.5s;
+
+
+				&.active {
+					background-color:darken($background-pink,3%);
+					border: 1px solid darken($background-pink,4%);
+
+					
+					a {
+						color: white;
+
+						&:before {
+							background-color:white;
+							border: 1px solid darken($background-pink,4%);
+						}	
+					}
+				}
+
 
 				a {
 					&:before {
 						width:10px;
 						height:10px;
 						border-radius:50%;
-						border:1px solid darken(#efefef,20%);
+						border:1px solid darken(#efefef,30%);
 						position:absolute;
 						content:'';
 						top:4px;
@@ -28,9 +60,11 @@ Filtering
 					}
 
 					text-decoration:none;
-					color:$text-color;
+					color:darken(#efefef,20%);
 					position:Relative;
 				}
+
+			}
 			}
 		}
 }

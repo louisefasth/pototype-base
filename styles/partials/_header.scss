@@ -5,18 +5,47 @@ HEADER
 header{
     
     width: 100%;
+
     
 
     .top{
-        background: $background;
+        background: darken($background-pink,3%);
+        border-bottom:2px solid darken($background-pink,4%);
+        overflow:hidden;
+
     }
 
-    .main-nav{
+    .main-nav {
         background: $background-pink;
-        height: 100px;
+        padding: 15px 0 20px 0;
     }
 
     .logo {
-    	
+        display: block;
+        width: 123px;
+        height: 78px;
+        border: none;
+        background: url('../imgs/logo.png');
+        background-size: cover;
+       
+
+    	h1 {
+            color: transparent;
+        }
+    }
+
+    .search {
+        padding: 10px 30px;
+        min-width: 40%;
+        border:none;
+        background-color: transparent;
+
+
+
+    }
+
+    .fa-search {
+      
+        font-size: 18px;
     }
 }

@@ -13,7 +13,7 @@ Fonts
 -------------------------------------------------*/
 html,
 body {
-  font-family: "Source sans pro", "Arial";
+  font-family: "Open sans", "Source sans pro", "Arial";
   font-size: 16px;
   font-weight: 300; }
 
@@ -329,10 +329,28 @@ HEADER
 header {
   width: 100%; }
   header .top {
-    background: #ffffff; }
+    background: #ec3387;
+    border-bottom: 2px solid #eb2e84;
+    overflow: hidden; }
   header .main-nav {
     background: #ED418F;
-    height: 100px; }
+    padding: 15px 0 20px 0; }
+  header .logo {
+    display: block;
+    width: 123px;
+    height: 78px;
+    border: none;
+    background: url("../imgs/logo.png");
+    background-size: cover; }
+    header .logo h1 {
+      color: transparent; }
+  header .search {
+    padding: 10px 30px;
+    min-width: 40%;
+    border: none;
+    background-color: transparent; }
+  header .fa-search {
+    font-size: 18px; }
 
 /*
 Footer
@@ -342,49 +360,132 @@ footer {
   padding: 80px 0; }
 
 /*
+Hero
+--------------------------------------------------------*/
+.hero {
+  width: 100%;
+  height: 250px;
+  background: #efefef;
+  background-size: cover;
+  position: relative; }
+  .hero .container {
+    min-height: 200px; }
+  .hero h2 {
+    color: #929292;
+    font-size: 30px;
+    font-weight: 200;
+    bottom: 20px;
+    position: absolute; }
+
+/*
 NAVIGATION
 --------------------------------------------------------*/
-nav a {
+nav li {
+  display: inline-block; }
+
+a {
   text-decoration: none; }
+
+.secondary-nav {
+  float: right; }
+  .secondary-nav li a {
+    display: block;
+    padding: 12px 10px 2px 10px;
+    color: white;
+    font-size: 14px; }
+
+.primary-nav {
+  float: right;
+  position: absolute;
+  right: 40px;
+  bottom: -10px; }
+  .primary-nav li a {
+    display: block;
+    padding: 4px 10px 6px 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: 100; }
 
 /*
 Filtering
 --------------------------------------------------------*/
 .filters {
   with: 100%;
-  overflow: hidden; }
-  .filters ul li {
-    display: inline-block;
-    float: left;
-    padding: 8px 20px 8px 25px;
-    border: 1px solid #d5d5d5;
-    margin-right: 8px; }
-    .filters ul li a {
-      text-decoration: none;
-      color: #929292;
-      position: Relative; }
-      .filters ul li a:before {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border: 1px solid #bcbcbc;
-        position: absolute;
-        content: '';
-        top: 4px;
-        left: -18px; }
+  overflow: hidden;
+  text-align: center; }
+  .filters .filter-label {
+    color: #929292;
+    font-size: 20px;
+    font-weight: 200; }
+  .filters ul {
+    margin: 8px 0;
+    overflow: hidden; }
+    .filters ul li {
+      display: inline-block;
+      padding: 8px 20px 8px 25px;
+      margin-right: 8px; }
+      .filters ul li.filterbox {
+        border: 1px solid #a3a3a3;
+        transition: all 0.5s; }
+        .filters ul li.filterbox.active {
+          background-color: #ec3387;
+          border: 1px solid #eb2e84; }
+          .filters ul li.filterbox.active a {
+            color: white; }
+            .filters ul li.filterbox.active a:before {
+              background-color: white;
+              border: 1px solid #eb2e84; }
+        .filters ul li.filterbox a {
+          text-decoration: none;
+          color: #bcbcbc;
+          position: Relative; }
+          .filters ul li.filterbox a:before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid #a3a3a3;
+            position: absolute;
+            content: '';
+            top: 4px;
+            left: -18px; }
 
 /*
 Filtering
 --------------------------------------------------------*/
+.box-section {
+  background-color: #f3f3f3;
+  padding: 40px 0;
+  overflow: hidden; }
+
 .boxes {
   with: 100%;
   overflow: hidden; }
   .boxes .boxy-box {
     background-color: white;
-    float: left;
-    width: 20%;
-    margin-right: 5%; }
+    width: 100%;
+    min-height: 300px; }
+    @media (min-width: 768px) {
+      .boxes .boxy-box {
+        width: calc(25% - 25px);
+        float: left;
+        margin-right: 25px; }
+        .boxes .boxy-box:nth-child(4) {
+          margin-right: 0; } }
 
+/*
+Hero
+--------------------------------------------------------*/
+.cart {
+  position: absolute;
+  right: 0;
+  height: 20px;
+  top: 0; }
+  .cart i {
+    color: white; }
+
+/*
+Buttons
+--------------------------------------------------------*/
 /*--------------------------------------------------------*/
 body {
   background: #ffffff; }
@@ -392,9 +493,11 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  clear: both; }
+  clear: both;
+  padding: 0 40px;
+  position: relative; }
 
-section {
+.content-sections {
   max-width: 940px;
   margin: 0 auto; }
 

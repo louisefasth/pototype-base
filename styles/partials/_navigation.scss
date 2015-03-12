@@ -2,6 +2,50 @@
 NAVIGATION
 --------------------------------------------------------*/
 
-nav a {
+nav {
+	li {
+		display:inline-block;
+	}
+} 
+
+
+a {
 	text-decoration:none;
+}
+
+
+.secondary-nav {
+	float:right;
+
+	li {
+		a {
+			display:block;
+			padding:12px 10px 2px 10px;
+			color: white;
+			font-size: 14px;
+		}
+		
+
+
+
+	}
+
+}
+.primary-nav {
+	float:right;
+	position:absolute;
+	right:40px;
+	bottom:-10px;
+	
+	li {
+		a {
+			display:block;
+			padding:4px 10px 6px 10px;
+			font-size:25px;
+			color:white;
+			font-weight:100;
+		}
+		
+	}
+
 }

@@ -117,15 +117,15 @@ BREAKPOINTS
 @mixin breakpoint($point) {
 
     @if $point == xlarge {
-        @media (max-width: 1400px) { @content; }
+        @media (min-width: 1400px) { @content; }
     }
 
     @if $point == large {
-        @media (max-width: 1024px) { @content; }
+        @media (min-width: 1024px) { @content; }
     }
 
     @else if $point == medium {
-        @media (max-width: 768px)  { @content; }
+        @media (min-width: 768px)  { @content; }
     }
 
     @else if $point == small {
