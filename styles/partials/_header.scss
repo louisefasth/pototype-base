@@ -12,28 +12,32 @@ header{
         background: darken($background-pink,3%);
         border-bottom:2px solid darken($background-pink,4%);
         overflow:hidden;
+        height: 50px;
 
         .search{
             background: darken($background-pink,8%);
             float: left;
             max-width: 400px;
             width: 100%;
+            height: 50px;
             color: darken($background-pink,20%);
 
             .search-field{
                 background: darken($background-pink,8%);
-                padding: 12px 10px 10px;
+                padding: 18px 18px 10px;
                 border: none;
                 width: 80%;
                 color: white;
                 font-weight: 200;
+                opacity: 0.8;
             }
 
             .fa-search {
                 float: right;
                 font-size: 18px;
                 color: $background-white;
-                padding: 10px;
+                padding: 14px 14px;
+                opacity: 0.8;
             }
 
         }
@@ -44,12 +48,14 @@ header{
     }
 
     .main-nav {
+        @include columns(12,0);
         background: $background-pink;
         padding: 15px 0 20px 0;
+        text-align: center;
     }
 
     .logo {
-        display: inline-block;
+        float: left;
         width: 123px;
         height: 78px;
         border: none;

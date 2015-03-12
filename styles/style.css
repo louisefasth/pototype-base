@@ -331,32 +331,40 @@ header {
   header .top {
     background: #ec3387;
     border-bottom: 2px solid #eb2e84;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 50px; }
     header .top .search {
       background: #e91c79;
       float: left;
       max-width: 400px;
       width: 100%;
+      height: 50px;
       color: #b7115c; }
       header .top .search .search-field {
         background: #e91c79;
-        padding: 12px 10px 10px;
+        padding: 18px 18px 10px;
         border: none;
         width: 80%;
         color: white;
-        font-weight: 200; }
+        font-weight: 200;
+        opacity: 0.8; }
       header .top .search .fa-search {
         float: right;
         font-size: 18px;
         color: #ffffff;
-        padding: 10px; }
+        padding: 14px 14px;
+        opacity: 0.8; }
     header .top .secondary-nav {
       float: right; }
   header .main-nav {
+    float: left;
+    width: 100%;
+    margin-right: 0;
     background: #ED418F;
-    padding: 15px 0 20px 0; }
+    padding: 15px 0 20px 0;
+    text-align: center; }
   header .logo {
-    display: inline-block;
+    float: left;
     width: 123px;
     height: 78px;
     border: none;
@@ -403,20 +411,21 @@ a {
   float: right; }
   .secondary-nav li a {
     display: block;
-    padding: 12px 10px 2px 10px;
+    padding: 16px 20px 2px 10px;
     color: white;
-    font-size: 14px; }
+    font-size: 14px;
+    opacity: 0.8; }
 
 .primary-nav {
   display: inline-block;
-  text-align: center; }
+  float: right;
+  padding-top: 20px; }
   .primary-nav li a {
     display: inline-block;
     padding: 4px 20px 6px;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
-    font-weight: 100;
-    text-transform: uppercase; }
+    font-weight: 100; }
 
 /*
 Filtering
@@ -527,9 +536,36 @@ Hero
 --------------------------------------------------------*/
 .cart {
   float: right;
-  font-size: 30px; }
+  height: 50px; }
   .cart i {
-    color: white; }
+    background: #e51674;
+    float: left;
+    font-size: 22px;
+    color: white;
+    padding: 12px 10px 0;
+    margin-right: 2px;
+    height: 50px; }
+  .cart .items {
+    background: #e51674;
+    height: 50px;
+    display: inline-block;
+    padding: 12px 6px; }
+    .cart .items span {
+      background: #b7115c;
+      float: left;
+      width: 24px;
+      height: 24px;
+      padding: 4px 4px 6px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      opacity: 0.8; }
+    .cart .items p {
+      display: inline-block;
+      font-size: 18px;
+      margin-left: 4px;
+      color: white; }
 
 /*
 Buttons
