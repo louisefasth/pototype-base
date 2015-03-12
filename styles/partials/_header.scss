@@ -6,7 +6,13 @@ header{
     
     width: 100%;
 
-    .search {
+    h2{
+        float: left;
+        color: white;
+        margin: 12px;
+    }
+
+    .search{
             background: darken($background-pink,8%);
             float: left;
             max-width: 600px;
@@ -16,6 +22,7 @@ header{
             font-weight: 200;
             margin-left: 90px;
             margin-top: 10px;
+            
 
 
 
@@ -37,18 +44,20 @@ header{
 
             .search-field {
                 background: darken($background-pink,8%);
-                padding: 20px 18px 10px;
+                padding: 14px 18px 10px;
                 border: none;
                 width: 80%;
                 color: white;
-                font-weight: 200;
                 opacity: 0.6;
                 font-size: 25px;
                 float: left;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: 100;
+                letter-spacing: 2px;
 
                 &:focus {
-                  outline-color: transparent;
-                  outline-style: none;
+                    outline-color: transparent;
+                    outline-style: none;
                     -webkit-appearance: none;
                      opacity: 0.9;
                 }
@@ -58,7 +67,7 @@ header{
                 float: right;
                 font-size: 22px;
                 color: $background-white;
-                padding: 20px 30px;
+                padding: 17px 20px;
                 opacity: 0.8;
                 opacity: 0.6;
             }

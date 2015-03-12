@@ -1,0 +1,63 @@
+/*
+Box Teasers
+--------------------------------------------------------*/
+.teaser-section{
+    background-color:$background-light-grey;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.box-teaser{
+    float:left;
+    width: calc(25% - 25px);
+    margin-right: 25px;
+    height: 250px;
+    text-align:center;
+    min-height: 300px;
+
+    h4{
+        width: 100%;
+        font-size: 50px;
+        font-weight: 300;
+        color: white;
+        text-align: left;
+        padding: 20px;
+    }
+
+    span{
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        text-align: left;
+        padding: 0 20px;
+        line-height:24px;
+    }
+
+
+    &.blue{
+        background: lighten($blue, 20%);
+
+        h4{
+            background: url(../imgs/farse-logo.png)no-repeat 20px 20px;
+            background-size: 122px 56px;
+            height: 100px;
+            font-size: 0;
+            color: transparent;
+        }
+        
+    }
+
+    &.magazine{
+        background: $green;
+        background: url(../imgs/resultat.jpg)no-repeat top left;
+        background-size: cover;
+
+    }
+
+    &.pink{
+        background: lighten($background-pink, 20%);
+    }
+}
