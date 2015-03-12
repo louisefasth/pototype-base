@@ -33,6 +33,12 @@ Filtering
 		width: 100%;
 		min-height: 300px;
 		position: relative;
+		display: none;
+
+		&.active {
+			display: block;
+		}
+
 
 		 @include breakpoint(medium) {
 			width: calc(25% - 25px);
@@ -45,10 +51,7 @@ Filtering
 		}
 
 
-		&.cat-hide {
-			display: none;
-		}
-
+		
 
 		h4 {
 			font-size: 20px;
