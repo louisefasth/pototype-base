@@ -57,7 +57,15 @@ Box Teasers
 
     }
 
-    &.pink{
+    &.course{
         background: lighten($background-pink, 20%);
+
+        span{
+            font-size: 30px;
+        }
+    }
+
+    &.career{
+        background: $green;
     }
 }

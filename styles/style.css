@@ -651,8 +651,12 @@ Box Teasers
     background: #b8d69a;
     background: url(../imgs/resultat.jpg) no-repeat top left;
     background-size: cover; }
-  .box-teaser.pink {
+  .box-teaser.course {
     background: #f69ec6; }
+    .box-teaser.course span {
+      font-size: 30px; }
+  .box-teaser.career {
+    background: #b8d69a; }
 
 /*
 Hero
