@@ -74,27 +74,44 @@
             <div class="filters">
                 <ul>
                         <li><h3 class="filter-label">Mina intresseområden är:</h3></li>
-                        <li class="filterbox" data-category="redovisning"><a href="#">Redovisning</a></li>
-                        <li class="filterbox" data-category="skatt"><a href="#">Skatt</a></li>
-                        <li class="filterbox" data-category="controlling"><a href="#">Controlling</a></li>
-                        <li class="filterbox" data-category="ekonomistyrning"><a href="#">Ekonomistyrning</a></li>
-                        <li class="filterbox" data-category="revision"><a href="#">Revision</a></li>
-                        <li class="filterbox" data-category="analys"><a href="#">Analys & validering</a></li>
+                        <li class="filterbox redovisning" data-category="redovisning"><a href="#">Redovisning</a></li>
+                        <li class="filterbox skatt" data-category="skatt"><a href="#">Skatt</a></li>
+                        <li class="filterbox controlling" data-category="controlling"><a href="#">Controlling</a></li>
+                        <li class="filterbox ekonomistyrning" data-category="ekonomistyrning"><a href="#">Ekonomistyrning</a></li>
+                        <li class="filterbox revision" data-category="revision"><a href="#">Revision</a></li>
+                        <li class="filterbox analys" data-category="analys"><a href="#">Analys & validering</a></li>
                        
                 </ul>
 
             </div>
         </div>
-        <section class="hero">
+        <div class="heroWrapper">
+        <section class="hero active redovisning">
+            
+                <div class="container"> 
+                <div class="text-area"> 
+                    <h2>Certifierad controller</h2>
+                    <p>FAR Akademis 1-åriga program ger dig ny kunskap och en proaktiv utveckling i din controllerroll.</p>
+                    <p class="quote">"Det bästa jag någonsin gjort"</p>
+                    <p class="author">Knut, VD</p>
+                    <button class="green">Läs mer</button>
+                </div>
+        
+            </div>
+        </section>          
+        <section class="hero skatt">
+        
             <div class="container"> 
             <div class="text-area"> 
                 <h2>Certifierad controller</h2>
                 <p>FAR Akademis 1-åriga program ger dig ny kunskap och en proaktiv utveckling i din controllerroll.</p>
                 <button class="green">Läs mer</button>
             </div>
+        
             </div>
-        </section>        
-        <section class="box-section">
+        </section>  
+        </div>      
+        <section class="box-section courses">
            <div class="container"> 
                 <h4 class="box-label">Aktuella utbildningar<span class="filterCats"></span></h4> 
                 <div class="boxes">
@@ -137,28 +154,26 @@
                             <button class="apply green">Anmäl dig</button>
                         </div>
                     </div>
-                    <!--div class="boxy-box active stats" data-category="skatt">
-                        <div class="content-area"> 
+                    
+              </div>  
+               </div> 
+            </section>
+            <section class="box-section books">
+                <div class="container"> 
+                 <h4 class="box-label">Aktuella böcker<span class="filterCats"></span></h4> 
+                  <div class="boxes">
 
-                           
+                        <div class="boxy-box active" data-category="redovisning">
+                            <div class="btn-area">                            
+                                <button class="buy green">Lägg i varukorg</button>
+                            </div>
                         </div>
-                       
-                    </div-->
-              </div>   
-
-             <h4 class="box-label">Aktuella böcker</h4> 
-              <div class="boxes">
-
-                    <div class="boxy-box active" data-category="redovisning">
-                        <div class="btn-area">                            
-                            <button class="buy green">Lägg i varukorg</button>
-                        </div>
-                    </div>
-                    <div class="boxy-box active" data-category="redovisning"></div>
-                    <div class="boxy-box active" data-category="skatt"></div>
-                    <div class="boxy-box active"></div>
+                        <div class="boxy-box active" data-category="redovisning"></div>
+                        <div class="boxy-box active" data-category="skatt"></div>
+                        <div class="boxy-box active"></div>
+                  </div>
               </div>
-            </div>
+           
         </section>
 
     </section>

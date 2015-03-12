@@ -2,13 +2,31 @@
 Hero
 --------------------------------------------------------*/
 
+.heroWrapper {
+    min-height: 50vh;
+    position: relative;
+}
+
 .hero {
     width: 100%;
     background: #efefef;
-    background: url('../imgs/happy_bg.png') top center;
-   // background: url('../imgs/bg_bw_2.jpg') top center;
-    background-size: cover;
-    position: relative;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+          background: url('../imgs/happy_bg.png') top center;
+      background-size: cover;
+      opacity: 0;
+      -webkit-transition: all 0.5s; /* Safari */
+      transition: all 0.5s;
+
+ 
+
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+ 
+    }
 
 
     .container {
@@ -38,5 +56,21 @@ Hero
         bottom: 5vh;
         position: absolute;
         max-width: 40%;
+      }
+
+       &.skatt {
+          background: url('../imgs/bg_bw_2.jpg') top center;
+          background-size: cover;
+        .bg-cont {
+       
+        }
+
+        .text-area {
+          right: 0;
+        }
+
+        h2, p {
+          color:darken($text-color,40%);
+        }
       }
 }

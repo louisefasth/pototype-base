@@ -431,12 +431,25 @@ footer {
 /*
 Hero
 --------------------------------------------------------*/
+.heroWrapper {
+  min-height: 50vh;
+  position: relative; }
+
 .hero {
   width: 100%;
   background: #efefef;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
   background: url("../imgs/happy_bg.png") top center;
   background-size: cover;
-  position: relative; }
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  /* Safari */
+  transition: all 0.5s; }
+  .hero.active {
+    visibility: visible;
+    opacity: 1; }
   .hero .container {
     min-height: 50vh; }
   .hero h2 {
@@ -455,6 +468,13 @@ Hero
     bottom: 5vh;
     position: absolute;
     max-width: 40%; }
+  .hero.skatt {
+    background: url("../imgs/bg_bw_2.jpg") top center;
+    background-size: cover; }
+    .hero.skatt .text-area {
+      right: 0; }
+    .hero.skatt h2, .hero.skatt p {
+      color: #2c2c2c; }
 
 /*
 NAVIGATION
@@ -511,7 +531,7 @@ Filtering
         transition: all 0.5s;
         min-width: 100px;
         border-radius: 1px;
-        opacity: 0.5; }
+        opacity: 0.4; }
         .filters ul li.filterbox.active {
           background-color: #e51674;
           border: 1px solid #eb2e84;
@@ -632,8 +652,9 @@ Filtering
       bottom: 0;
       width: 100%;
       padding: 10px;
-      opacity: 0;
       transition: all 0.5s; }
+      .courses .boxes .boxy-box .btn-area {
+        opacity: 0; }
     .boxes .boxy-box:hover .btn-area {
       opacity: 1; }
     .boxes .boxy-box button {
@@ -641,6 +662,8 @@ Filtering
       width: calc(50% - 5px); }
       .boxes .boxy-box button:nth-child(2) {
         float: right; }
+      .books .boxes .boxy-box button {
+        width: 100%; }
 
 /*
 Box Teasers

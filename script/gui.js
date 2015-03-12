@@ -6,7 +6,8 @@ $(function() {
   		$boxLabels = $('.box-label');
   		$boxLabelBox = $('.filterCats');
   		$category = $this.data('category');
-  		$boxSection = $('.box-section');
+      $boxSection = $('.box-section');
+  		$heroSection = $('.hero');
 
   		catStr = ' ';
   		catList = new Array();
@@ -16,36 +17,57 @@ $(function() {
   			catStr = catStr + '<span>' + $( this ).find('a').text() + '</span>';
   		});
 
-  		console.log('this is the array' + catList);
-
-  		$boxSection.each(function( i ) {
-  			$('.boxy-box').each(function() {
-  				$this = $(this);
-  				$this.removeClass('active');
-
-  				if (catList.length <= 0) {
-		  			
-		  				$this.addClass('active');	
-
-		  		}
+      $heroSection.each(function( i ) {
+          $(this).removeClass('active');
+      });
 
 
-  				var i;
+      if ($this.hasClass('skatt')) {
+        $('.hero.skatt').addClass('active');
+      }
+      if ($this.hasClass('revision')) {
+          $('.hero.revision').addClass('active');
+      }      
+      if ($this.hasClass('controlling')) {
+         $('.hero.controlling').addClass('active');
+      }      
+      if ($this.hasClass('ekonomistyrning')) {
+        $('.hero.ekonomistyrning').addClass('active');
+      }      
+      if ($this.hasClass('analys')) {
+         $('.hero.analys').addClass('active');
+      }      
 
-  				
+      if ($this.hasClass('redovisning')) {
+          $('.hero.redovisning').addClass('active');
+      }
 
-				for (i = 0; i < catList.length; ++i) {
-					 if (catList[i] == $this.data('category')) {
-					 	$this.addClass('active');	
-					 }
 
-  				}
+      $boxSection.each(function( i ) {
+        $('.boxy-box').each(function() {
+          $this = $(this);
+          $this.removeClass('active');
 
-  				
+          if (catList.length <= 0) {
+              $this.addClass('active'); 
+          }
 
-  			});
 
-  		});
+          var i;
+          for (i = 0; i < catList.length; ++i) {
+             if (catList[i] == $this.data('category')) {
+              $this.addClass('active'); 
+             }
+
+          }
+
+          
+
+        });
+
+      });
+
+ 
 
   	
 
