@@ -684,19 +684,22 @@ Box Teasers
     .box-teaser.blue span {
       letter-spacing: 1px; }
   .box-teaser.magazine {
-    background: #b8d69a;
     background: url(../imgs/resultat.jpg) no-repeat top left;
     background-size: cover; }
   .box-teaser.course {
-    background: #f69ec6; }
+    background: #ED418F url(../imgs/symbol_black_trans.png) bottom right no-repeat;
+    background-size: cover; }
     .box-teaser.course span {
-      font-size: 30px; }
+      font-size: 26px; }
     .box-teaser.course button {
       margin-top: 40px; }
   .box-teaser.career {
-    background: #b8d69a; }
+    background: url(../imgs/career.jpg) no-repeat -90px bottom;
+    background-size: cover; }
+    .box-teaser.career h4 {
+      font-size: 38px; }
     .box-teaser.career span {
-      font-size: 20px; }
+      font-size: 14px; }
 
 /*
 Hero

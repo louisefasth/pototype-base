@@ -56,17 +56,18 @@ Box Teasers
     }
 
     &.magazine{
-        background: $green;
+        //background: $green;
         background: url(../imgs/resultat.jpg)no-repeat top left;
         background-size: cover;
 
     }
 
     &.course{
-        background: lighten($background-pink, 20%);
-
+        background: $background-pink url(../imgs/symbol_black_trans.png) bottom right no-repeat;
+        background-size: cover;
+        
         span{
-            font-size: 30px;
+            font-size: 26px;
         }
 
         button{
@@ -75,10 +76,16 @@ Box Teasers
     }
 
     &.career{
-        background: $green;
+        //background: $green;
+        background: url(../imgs/career.jpg) no-repeat -90px bottom;
+        background-size: cover;
+
+        h4{
+            font-size: 38px;
+        }
 
         span{
-            font-size: 20px;
+            font-size: 14px;
         }
     }
 }
