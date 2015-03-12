@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme: FAR Akademi
 Author: Ziggy
@@ -440,14 +441,16 @@ Hero
     min-height: 50vh; }
   .hero h2 {
     color: white;
-    font-size: 40px;
-    font-weight: 200; }
+    font-size: 50px;
+    font-weight: 800; }
   .hero p {
     color: white;
-    font-size: 20px;
-    padding: 10px 0; }
+    font-size: 23px;
+    padding: 10px 0;
+    line-height: 1.4; }
   .hero button {
-    margin-top: 10px; }
+    margin-top: 20px;
+    padding: 8px 40px; }
   .hero .text-area {
     bottom: 5vh;
     position: absolute;
@@ -491,6 +494,7 @@ Filtering
   text-align: center; }
   .filters .filter-label {
     color: #929292;
+    color: #595959;
     font-size: 20px;
     font-weight: 200; }
   .filters ul {
@@ -503,26 +507,39 @@ Filtering
       text-align: left; }
       .filters ul li.filterbox {
         border: 1px solid #a3a3a3;
+        border: 1px solid #ec3387;
         transition: all 0.5s;
-        min-width: 100px; }
+        min-width: 100px;
+        border-radius: 1px;
+        opacity: 0.5; }
         .filters ul li.filterbox.active {
-          background-color: #ec3387;
-          border: 1px solid #eb2e84; }
+          background-color: #e51674;
+          border: 1px solid #eb2e84;
+          opacity: 1; }
           .filters ul li.filterbox.active a {
             color: white; }
             .filters ul li.filterbox.active a:before {
               background-color: white;
-              border: 1px solid #eb2e84; }
+              border: 1px solid #eb2e84;
+              color: #eb2e84;
+              padding-left: 2px;
+              padding-top: 2px;
+              content: '';
+              font: normal normal normal 14px/1 FontAwesome; }
         .filters ul li.filterbox a {
           text-decoration: none;
           color: #bcbcbc;
+          color: #ec3387;
           position: Relative; }
           .filters ul li.filterbox a:before {
+            content: '';
+            font: normal normal normal 14px/1 FontAwesome;
             width: 20px;
             height: 20px;
+            border-radius: 1px;
             border: 1px solid #a3a3a3;
+            border: 1px solid #ec3387;
             position: absolute;
-            content: '';
             top: 0px;
             left: -34px; }
 
@@ -537,10 +554,16 @@ Filtering
     font-family: "Open sans", "Source sans pro", "Arial";
     font-size: 18px;
     text-transform: uppercase;
-    color: #aaa;
+    color: #5E5E5E;
     letter-spacing: 0.05em;
     padding: 30px 0 30px 0;
-    text-align: center; }
+    text-align: left; }
+    .box-section .box-label .filterCats {
+      color: #777777; }
+      .box-section .box-label .filterCats span:nth-child(1):before {
+        content: ': '; }
+      .box-section .box-label .filterCats span:nth-child(2):before, .box-section .box-label .filterCats span:nth-child(3):before, .box-section .box-label .filterCats span:nth-child(4):before, .box-section .box-label .filterCats span:nth-child(5):before {
+        content: ', '; }
 
 .boxes {
   with: 100%;
@@ -550,10 +573,14 @@ Filtering
   .boxes .boxy-box {
     background-color: white;
     width: 100%;
-    min-height: 300px;
+    min-height: 360px;
     position: relative;
     display: none;
     border-radius: 3px; }
+    .boxes .boxy-box p {
+      font-size: 14px;
+      text-align: left;
+      padding-top: 15px; }
     .boxes .boxy-box.active {
       display: block; }
     .boxes .boxy-box.pink {
@@ -568,30 +595,33 @@ Filtering
       margin-top: 20px;
       letter-spacing: 0.08em; }
     .boxes .boxy-box .number {
-      font-size: 60px; }
+      font-size: 60px;
+      font-weight: 800; }
     .boxes .boxy-box .tag {
-      width: 100%;
-      position: absolute;
       height: 20px;
       top: 0;
       left: 0;
-      padding-top: 4px; }
+      padding-bottom: 10px;
+      display: block; }
     .boxes .boxy-box.bg {
-      background: url("../imgs/happy.png");
+      background: url("../imgs/bg_bw.jpg");
       background-size: cover;
-      color: white; }
+      color: #424242;
+      padding-top: 140px; }
     @media (min-width: 768px) {
       .boxes .boxy-box {
         width: calc(25% - 25px);
         float: left;
         margin-right: 25px; }
+        .boxes .boxy-box.double {
+          width: calc(50% - 25px); }
         .boxes .boxy-box:nth-child(4) {
           margin-right: 0; } }
     .boxes .boxy-box .content-area {
       padding: 40px 30px; }
     .boxes .boxy-box h4 {
-      font-size: 30px;
-      font-weight: 200;
+      font-size: 25px;
+      font-weight: 600;
       padding-bottom: 10px; }
     .boxes .boxy-box .btn-area {
       position: absolute;
@@ -701,8 +731,10 @@ button {
   text-shadow: none;
   border: none;
   box-shadow: none;
-  padding: 8px 10px;
-  border-radius: 4px; }
+  padding: 10px 10px;
+  border-radius: 4px;
+  font-family: "Open sans", "Source sans pro", "Arial";
+  font-weight: 100; }
   button.pink {
     background-color: #ce1468;
     background-color: #99cdcb;

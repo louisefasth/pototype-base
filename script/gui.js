@@ -13,7 +13,7 @@ $(function() {
 
   		$this.parent().find('.active').each(function( i ) {
   			catList.push($( this ).data( "category" ));
-  			catStr = catStr + ' ' + $( this ).find('a').text();
+  			catStr = catStr + '<span>' + $( this ).find('a').text() + '</span>';
   		});
 
   		console.log('this is the array' + catList);
@@ -32,7 +32,7 @@ $(function() {
 
   				var i;
 
-  				console.log('this is the array' + catList);
+  				
 
 				for (i = 0; i < catList.length; ++i) {
 					 if (catList[i] == $this.data('category')) {
