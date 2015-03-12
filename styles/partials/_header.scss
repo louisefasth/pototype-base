@@ -16,7 +16,8 @@ header{
             font-weight: 200;
             margin-left: 90px;
             margin-top: 10px;
-
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            
 
 
             ::-webkit-input-placeholder {
@@ -47,8 +48,8 @@ header{
                 float: left;
 
                 &:focus {
-                  outline-color: transparent;
-                  outline-style: none;
+                    outline-color: transparent;
+                    outline-style: none;
                     -webkit-appearance: none;
                      opacity: 0.9;
                 }

@@ -337,7 +337,8 @@ header {
     color: #b7115c;
     font-weight: 200;
     margin-left: 90px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header .search ::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.6); }
     header .search :-moz-placeholder {
