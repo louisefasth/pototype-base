@@ -10,8 +10,11 @@ Filtering
 
 	.filter-label {
 		color:$text-color;
+		color:#595959;
         font-size: 20px;
         font-weight: 200;
+
+      
 	}
 
 	ul {
@@ -29,13 +32,17 @@ Filtering
 
 			&.filterbox {
 				border:1px solid darken(#efefef,30%);
+				border:1px solid darken($background-pink,3%);
 				transition: all 0.5s;
 				min-width: 100px;
+				border-radius:1px;
+				opacity: 0.5;
 
 
 				&.active {
-					background-color:darken($background-pink,3%);
+					background-color:darken($background-pink,10%);
 					border: 1px solid darken($background-pink,4%);
+					opacity: 1;
 
 					
 					a {
@@ -44,6 +51,12 @@ Filtering
 						&:before {
 							background-color:white;
 							border: 1px solid darken($background-pink,4%);
+							color:darken($background-pink,4%);
+							padding-left: 2px;
+							padding-top: 2px;
+							content:'';
+							font: normal normal normal 14px/1 FontAwesome;
+							
 						}	
 					}
 				}
@@ -51,18 +64,22 @@ Filtering
 
 				a {
 					&:before {
+						content:'';
+						font: normal normal normal 14px/1 FontAwesome;
 						width:20px;
 						height:20px;
-						//border-radius:50%;
+						border-radius:1px;
 						border:1px solid darken(#efefef,30%);
+						border:1px solid darken($background-pink,3%);
 						position:absolute;
-						content:'';
+				
 						top:0px;
 						left:-34px;
 					}
 
 					text-decoration:none;
 					color:darken(#efefef,20%);
+					color:darken($background-pink,3%);
 					position:Relative;
 				}
 
