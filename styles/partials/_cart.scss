@@ -3,10 +3,13 @@ Hero
 --------------------------------------------------------*/
 
 .cart {
-     position: absolute;
-     right: 0;
-     height: 20px;
-     top: 0;
+     //position: absolute;
+     //right: 0;
+     //height: 20px;
+     //top: 0;
+     
+     float: right;
+     font-size: 30px;
 
      i {
         color: white;

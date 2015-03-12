@@ -13,6 +13,34 @@ header{
         border-bottom:2px solid darken($background-pink,4%);
         overflow:hidden;
 
+        .search{
+            background: darken($background-pink,8%);
+            float: left;
+            max-width: 400px;
+            width: 100%;
+            color: darken($background-pink,20%);
+
+            .search-field{
+                background: darken($background-pink,8%);
+                padding: 12px 10px 10px;
+                border: none;
+                width: 80%;
+                color: white;
+                font-weight: 200;
+            }
+
+            .fa-search {
+                float: right;
+                font-size: 18px;
+                color: $background-white;
+                padding: 10px;
+            }
+
+        }
+        
+        .secondary-nav{
+            float: right;
+        }
     }
 
     .main-nav {
@@ -21,7 +49,7 @@ header{
     }
 
     .logo {
-        display: block;
+        display: inline-block;
         width: 123px;
         height: 78px;
         border: none;
@@ -34,18 +62,4 @@ header{
         }
     }
 
-    .search {
-        padding: 10px 30px;
-        min-width: 40%;
-        border:none;
-        background-color: transparent;
-
-
-
-    }
-
-    .fa-search {
-      
-        font-size: 18px;
-    }
 }
