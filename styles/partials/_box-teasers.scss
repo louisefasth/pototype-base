@@ -15,6 +15,7 @@ Box Teasers
     height: 250px;
     text-align:center;
     min-height: 300px;
+    border-radius: 3px;
 
     h4{
         width: 100%;
@@ -56,17 +57,29 @@ Box Teasers
     }
 
     &.magazine{
-        background: $green;
+        //background: $green;
         background: url(../imgs/resultat.jpg)no-repeat top left;
         background-size: cover;
 
     }
 
     &.course{
-        background: lighten($background-pink, 20%);
+        background: $background-pink url(../imgs/symbol_black_trans.png) bottom right no-repeat;
+        background-size: cover;
+        
+        h4{
+            padding: 20px 20px 6px;
+        }
+
+        .teaser-title{
+            font-size: 30px;
+            line-height: 34px;
+            padding: 0 0 0 20px;
+        }        
 
         span{
-            font-size: 30px;
+            font-size: 18px;
+            padding: 20px 0 0 20px;
         }
 
         button{
@@ -75,10 +88,16 @@ Box Teasers
     }
 
     &.career{
-        background: $green;
+        //background: $green;
+        background: url(../imgs/career.jpg) no-repeat -30px bottom;
+        background-size: cover;
+
+        h4{
+            font-size: 40px;
+        }
 
         span{
-            font-size: 20px;
+            font-size: 14px;
         }
     }
 }

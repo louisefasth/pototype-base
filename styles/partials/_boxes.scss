@@ -182,8 +182,53 @@ Filtering
 
 		}
 
+		&.redovisning-one{
+			background: $background-white url(../imgs/entreprenorer-som-redovisare.jpg) no-repeat left -250px;
+			background-size: cover;
+		}
 
+		&.redovisning-two{
+			background: $background-white url(../imgs/ifrs-volymen-2014.jpg) no-repeat left -250px;
+			background-size: cover;
+		}
 
+		.title{
+			position: absolute;
+			left: 20px;
+			top: 190px;
+			font-size: 28px;
+			font-weight:100;
+		}
+
+		.teaser-text{
+			float: left;
+			position: absolute;
+			top: 230px;
+			margin: 0 20px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		.price-container{
+			//background: $background-pink;
+			.price{
+				position: absolute;
+				color: $background-pink;
+				font-weight: 400;
+				left: 5%;
+				bottom: 2%;
+
+			}
+
+			button.buy{
+				position: absolute;
+				width: 50%;		
+				bottom: 2%;
+				right: 2%;
+			}
+		}
+
+		
 	}
 }
 
