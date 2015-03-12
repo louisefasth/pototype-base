@@ -20,10 +20,6 @@
         <div class="top">
             <div class="container">  
                 
-                <div class="search">
-                    <input type="text" class="search-field" value="Sök kurser och böcker"> 
-                    <i class="fa fa-search"></i>
-                </div>
               
                 <div class="cart">
                     <i class="fa fa-shopping-cart"></i>
@@ -53,7 +49,11 @@
         <div class="main-nav">    
             <div class="container">    
                 <a class="logo" href="#"><h1>Far Akademi</h1></a>
-                
+                <div class="search">
+                    <input type="text" class="search-field" placeholder="Sök kurser och böcker"> 
+                    <i class="fa fa-search"></i>
+                </div>
+              
                 <nav class="primary-nav">
                     <ul>
                         <li><a href="#">Kurser</a></li>
@@ -71,7 +71,7 @@
         <div class="container">    
             <div class="filters">
                 <ul>
-                        <li><h3 class="filter-label">Mitt intresseområde är:</h3></li>
+                        <li><h3 class="filter-label">Mina intresseområden är:</h3></li>
                         <li class="filterbox" data-category="redovisning"><a href="#">Redovisning</a></li>
                         <li class="filterbox" data-category="skatt"><a href="#">Skatt</a></li>
                         <li class="filterbox" data-category="controlling"><a href="#">Controlling</a></li>
@@ -84,8 +84,12 @@
             </div>
         </div>
         <section class="hero">
-            <div class="container">  
-                <h2>Höstens utlandskurser</h2>
+            <div class="container"> 
+            <div class="text-area"> 
+                <h2>Certifierad controller</h2>
+                <p>FAR Akademis 1-åriga program ger dig ny kunskap och en proaktiv utveckling i din controllerroll.</p>
+                <button>Läs mer</button>
+            </div>
             </div>
         </section>        
         <section class="box-section">
@@ -93,15 +97,22 @@
                 <h4 class="box-label">Aktuella utbildningar<span class="filterCats"></span></h4> 
                 <div class="boxes">
 
-                    <div class="boxy-box active" data-category="redovisning">
-                        <h4>Ekonomichefsutbildning</h4>
+                    <div class="boxy-box active bg" data-category="redovisning">
+                        <div class="content-area"> 
+                            <span class="tag">Redovisning</span>
+                            <h4>Ekonomichefsutbildning</h4>
+                            <span class="time">1 årsprogram</span>
+                        </div>
                         <div class="btn-area">
                             <button class="recomend pink">Rekomendera</button>
                             <button class="apply green">Anmäl dig</button>
                         </div>
                     </div>
-                    <div class="boxy-box active">
-                        <h4>Skattenyheter för ekonomiansvariga | webbinarium</h4>
+                    <div class="boxy-box active pink">
+                        <div class="content-area"> 
+                            <h4>Skattenyheter för ekonomiansvariga</h4>
+                            <span class="time">webbinarium</span>
+                        </div>
                         <div class="btn-area">
                             <button class="recomend pink">Rekomendera</button>
                             <button class="apply green">Anmäl dig</button>
@@ -109,18 +120,22 @@
 
                     </div>
                     <div class="boxy-box active"  data-category="redovisning">
-                        <h4>Controllerutbildning</h4>
+                        <div class="content-area"> 
+                            <h4>Controllerutbildning</h4>
+                              <span class="time">Tre heldagar</span>
+                        </div>
                         <div class="btn-area">
                             <button class="recomend pink">Rekomendera</button>
                             <button class="apply green">Anmäl dig</button>
                         </div>
                     </div>
-                    <div class="boxy-box active" data-category="skatt">
-                        <h4>IFRS – grundläggande</h4>
-                        <div class="btn-area">
-                            <button class="recomend pink">Rekomendera</button>
-                            <button class="apply green">Anmäl dig</button>
+                    <div class="boxy-box active stats" data-category="skatt">
+                        <div class="content-area"> 
+                            <span class="number">10.000</span>
+                            <span class="time">Nöjda kunder</span>
+                           
                         </div>
+                       
                     </div>
               </div>   
 

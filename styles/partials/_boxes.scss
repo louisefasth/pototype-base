@@ -34,9 +34,51 @@ Filtering
 		min-height: 300px;
 		position: relative;
 		display: none;
+		border-radius:3px;
+		//text-align: center;
 
 		&.active {
 			display: block;
+		}
+
+
+		&.pink {
+			background: darken($background-pink,8%);
+			color: white;
+		}		
+
+		&.stats {
+			background: darken($background-pink,8%);
+			color: darken($background-pink,28%);
+
+		}	
+
+		.time {
+			text-transform: uppercase;
+			font-size: 14px;
+			margin-top: 20px;
+			letter-spacing: 0.08em;
+		}
+
+		.number {
+			font-size: 60px;
+
+		}
+
+		.tag {
+			width: 100%;
+			position: absolute;
+			height: 20px;
+			top: 0;
+			left: 0;
+			padding-top: 4px;
+		//	background: darken($background-pink,8%);
+		}
+
+		&.bg {
+			background:url('../imgs/happy.png');
+			background-size: cover;
+			color: white;
 		}
 
 
@@ -50,11 +92,13 @@ Filtering
 			}
 		}
 
-
+		.content-area {
+			padding: 40px 30px;
+		}
 		
 
 		h4 {
-			font-size: 20px;
+			font-size: 30px;
 			font-weight: 200;
 			padding-bottom: 10px;
 		}
@@ -64,36 +108,29 @@ Filtering
 			bottom: 0;
 			width: 100%;
 			padding: 10px;
+			opacity: 0;
+			transition: all 0.5s;
+
+
+		}
+
+		&:hover	.btn-area {
+			opacity: 1;
 		}
 
 
 		button {
 			float: left;
 			width: calc(50% - 5px);
-			text-shadow:none;
-			border:none;
-			box-shadow:none;
-			padding: 8px 10px;
-			border-radius: 4px;
-
 
 			&:nth-child(2) {
 				float:right;
 			}
 
-
-			&.pink {
-				background-color: darken($background-pink,15%);
-				color: white;
-				font-size: 16px;            	
-			}
-
-
-			&.green {
-				background-color: darken($green,10%);
-				color: white;
-			}
 		}
+
+
+
 	}
 }
 
