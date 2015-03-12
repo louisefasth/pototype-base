@@ -328,6 +328,10 @@ HEADER
 --------------------------------------------------------*/
 header {
   width: 100%; }
+  header h2 {
+    float: left;
+    color: white;
+    margin: 12px; }
   header .search {
     background: #e91c79;
     float: left;
@@ -337,8 +341,7 @@ header {
     color: #b7115c;
     font-weight: 200;
     margin-left: 90px;
-    margin-top: 10px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    margin-top: 10px; }
     header .search ::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.6); }
     header .search :-moz-placeholder {
@@ -351,14 +354,16 @@ header {
       color: rgba(255, 255, 255, 0.6); }
     header .search .search-field {
       background: #e91c79;
-      padding: 20px 18px 10px;
+      padding: 14px 18px 10px;
       border: none;
       width: 80%;
       color: white;
-      font-weight: 200;
       opacity: 0.6;
       font-size: 25px;
-      float: left; }
+      float: left;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 100;
+      letter-spacing: 2px; }
       header .search .search-field:focus {
         outline-color: transparent;
         outline-style: none;
@@ -368,7 +373,7 @@ header {
       float: right;
       font-size: 22px;
       color: #ffffff;
-      padding: 20px 30px;
+      padding: 17px 20px;
       opacity: 0.8;
       opacity: 0.6; }
   header .top {
@@ -602,6 +607,52 @@ Filtering
       width: calc(50% - 5px); }
       .boxes .boxy-box button:nth-child(2) {
         float: right; }
+
+/*
+Box Teasers
+--------------------------------------------------------*/
+.teaser-section {
+  background-color: #f3f3f3;
+  padding: 0;
+  overflow: hidden; }
+
+.box-teaser {
+  float: left;
+  width: calc(25% - 25px);
+  margin-right: 25px;
+  height: 250px;
+  text-align: center;
+  min-height: 300px; }
+  .box-teaser h4 {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 20px; }
+  .box-teaser span {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+    line-height: 24px; }
+  .box-teaser.blue {
+    background: #009bf8; }
+    .box-teaser.blue h4 {
+      background: url(../imgs/farse-logo.png) no-repeat 20px 20px;
+      background-size: 122px 56px;
+      height: 100px;
+      font-size: 0;
+      color: transparent; }
+  .box-teaser.magazine {
+    background: #b8d69a;
+    background: url(../imgs/resultat.jpg) no-repeat top left;
+    background-size: cover; }
+  .box-teaser.pink {
+    background: #f69ec6; }
 
 /*
 Hero
