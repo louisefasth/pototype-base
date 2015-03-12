@@ -573,7 +573,7 @@ Filtering
   .boxes .boxy-box {
     background-color: white;
     width: 100%;
-    min-height: 360px;
+    height: 360px;
     position: relative;
     display: none;
     border-radius: 3px; }
@@ -584,7 +584,8 @@ Filtering
     .boxes .boxy-box.active {
       display: block; }
     .boxes .boxy-box.pink {
-      background: #e91c79;
+      background: #ED418F url("../imgs/symbol_black_trans.png") bottom right no-repeat;
+      background-size: cover;
       color: white; }
     .boxes .boxy-box.stats {
       background: #e91c79;
@@ -604,7 +605,7 @@ Filtering
       padding-bottom: 10px;
       display: block; }
     .boxes .boxy-box.bg {
-      background: url("../imgs/bg_bw.jpg");
+      background: url("../imgs/bg_bw.jpg") top right;
       background-size: cover;
       color: #424242;
       padding-top: 140px; }
@@ -615,6 +616,8 @@ Filtering
         margin-right: 25px; }
         .boxes .boxy-box.double {
           width: calc(50% - 25px); }
+          .boxes .boxy-box.double h4 {
+            font-size: 40px; }
         .boxes .boxy-box:nth-child(4) {
           margin-right: 0; } }
     .boxes .boxy-box .content-area {
@@ -622,7 +625,8 @@ Filtering
     .boxes .boxy-box h4 {
       font-size: 25px;
       font-weight: 600;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      margin-top: 10px; }
     .boxes .boxy-box .btn-area {
       position: absolute;
       bottom: 0;
