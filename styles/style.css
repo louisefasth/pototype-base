@@ -651,13 +651,13 @@ Filtering
     .boxes .boxy-box .title {
       position: absolute;
       left: 20px;
-      top: 180px;
+      top: 190px;
       font-size: 28px;
       font-weight: 100; }
     .boxes .boxy-box .teaser-text {
       float: left;
       position: absolute;
-      top: 220px;
+      top: 230px;
       margin: 0 20px;
       font-size: 14px;
       line-height: 20px; }
@@ -733,10 +733,10 @@ Box Teasers
     .box-teaser.course button {
       margin-top: 40px; }
   .box-teaser.career {
-    background: url(../imgs/career.jpg) no-repeat -46px bottom;
+    background: url(../imgs/career.jpg) no-repeat -30px bottom;
     background-size: cover; }
     .box-teaser.career h4 {
-      font-size: 38px; }
+      font-size: 40px; }
     .box-teaser.career span {
       font-size: 14px; }
 
