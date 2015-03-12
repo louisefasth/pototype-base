@@ -16,30 +16,39 @@ $(function() {
   			catStr = catStr + ' ' + $( this ).find('a').text();
   		});
 
-
+  		console.log('this is the array' + catList);
 
   		$boxSection.each(function( i ) {
-  			
   			$('.boxy-box').each(function() {
   				$this = $(this);
-  				if ($this.data('category') == $category) {	
-  					$this.addClass('active');	
+  				$this.removeClass('active');
 
-  				}
+  				if (catList.length <= 0) {
+		  			
+		  				$this.addClass('active');	
+		  		
 
-  				else {
-  					$this.addClass('cat-hide');
-  				}
+		  		}
+
 
   				var i;
+
+  				console.log('this is the array' + catList);
+
 				for (i = 0; i < catList.length; ++i) {
-					   console.log(catList[i]);
-				}
+					 if (catList[i] == $this.data('category')) {
+					 	$this.addClass('active');	
+					 }
+
+  				}
+
+  				
 
   			});
 
   		});
 
+  	
 
   		
   		$boxLabelBox.html(catStr);
