@@ -677,6 +677,8 @@ Box Teasers
       height: 100px;
       font-size: 0;
       color: transparent; }
+    .box-teaser.blue span {
+      letter-spacing: 1px; }
   .box-teaser.magazine {
     background: #b8d69a;
     background: url(../imgs/resultat.jpg) no-repeat top left;
@@ -685,8 +687,12 @@ Box Teasers
     background: #f69ec6; }
     .box-teaser.course span {
       font-size: 30px; }
+    .box-teaser.course button {
+      margin-top: 40px; }
   .box-teaser.career {
     background: #b8d69a; }
+    .box-teaser.career span {
+      font-size: 20px; }
 
 /*
 Hero

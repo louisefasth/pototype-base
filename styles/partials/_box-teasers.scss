@@ -34,6 +34,7 @@ Box Teasers
         text-align: left;
         padding: 0 20px;
         line-height:24px;
+
     }
 
 
@@ -46,6 +47,10 @@ Box Teasers
             height: 100px;
             font-size: 0;
             color: transparent;
+        }
+
+        span{
+            letter-spacing: 1px;
         }
         
     }
@@ -63,9 +68,17 @@ Box Teasers
         span{
             font-size: 30px;
         }
+
+        button{
+            margin-top: 40px;
+        }
     }
 
     &.career{
         background: $green;
+
+        span{
+            font-size: 20px;
+        }
     }
 }
