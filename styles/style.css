@@ -642,6 +642,36 @@ Filtering
       width: calc(50% - 5px); }
       .boxes .boxy-box button:nth-child(2) {
         float: right; }
+    .boxes .boxy-box.redovisning-one {
+      background: #ffffff url(../imgs/entreprenorer-som-redovisare.jpg) no-repeat left -250px;
+      background-size: cover; }
+    .boxes .boxy-box.redovisning-two {
+      background: #ffffff url(../imgs/ifrs-volymen-2014.jpg) no-repeat left -250px;
+      background-size: cover; }
+    .boxes .boxy-box .title {
+      position: absolute;
+      left: 20px;
+      top: 180px;
+      font-size: 28px;
+      font-weight: 100; }
+    .boxes .boxy-box .teaser-text {
+      float: left;
+      position: absolute;
+      top: 220px;
+      margin: 0 20px;
+      font-size: 14px;
+      line-height: 20px; }
+    .boxes .boxy-box .price-container .price {
+      position: absolute;
+      color: #ED418F;
+      font-weight: 400;
+      left: 5%;
+      bottom: 2%; }
+    .boxes .boxy-box .price-container button.buy {
+      position: absolute;
+      width: 50%;
+      bottom: 2%;
+      right: 2%; }
 
 /*
 Box Teasers
@@ -657,7 +687,8 @@ Box Teasers
   margin-right: 25px;
   height: 250px;
   text-align: center;
-  min-height: 300px; }
+  min-height: 300px;
+  border-radius: 3px; }
   .box-teaser h4 {
     width: 100%;
     font-size: 50px;
