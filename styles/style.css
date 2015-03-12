@@ -452,7 +452,7 @@ Hero
     visibility: visible;
     opacity: 1; }
   .hero .container {
-    min-height: 50vh; }
+    min-height: 55vh; }
   .hero h2 {
     color: white;
     font-size: 50px;
@@ -512,27 +512,29 @@ Filtering
 .filters {
   with: 100%;
   overflow: hidden;
-  text-align: center; }
+  text-align: left; }
   .filters .filter-label {
     color: #929292;
     color: #595959;
     font-size: 20px;
     font-weight: 200; }
   .filters ul {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     overflow: hidden; }
     .filters ul li {
       display: inline-block;
-      padding: 8px 20px 8px 40px;
+      padding: 8px 20px 8px 0px;
       margin-right: 10px;
-      text-align: left; }
+      text-align: left;
+      margin-bottom: 10px; }
       .filters ul li.filterbox {
         border: 1px solid #a3a3a3;
         border: 1px solid #ec3387;
         transition: all 0.5s;
-        min-width: 100px;
+        min-width: 120px;
         border-radius: 1px;
-        opacity: 0.4; }
+        opacity: 0.4;
+        padding: 8px 20px 8px 40px; }
         .filters ul li.filterbox.active {
           background-color: #e51674;
           border: 1px solid #eb2e84;
@@ -569,16 +571,16 @@ Filtering
 --------------------------------------------------------*/
 .box-section {
   background-color: #f3f3f3;
-  padding: 40px 0;
+  padding: 40px 0 40px 0;
   overflow: hidden; }
   .box-section .box-label {
     font-family: "Open sans", "Source sans pro", "Arial";
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #5E5E5E;
     letter-spacing: 0.05em;
-    padding: 30px 0 30px 0;
-    text-align: left; }
+    padding: 60px 0 20px 0;
+    font-weight: 400; }
     .box-section .box-label .filterCats {
       color: #777777; }
       .box-section .box-label .filterCats span:nth-child(1):before {
@@ -597,36 +599,59 @@ Filtering
     height: 360px;
     position: relative;
     display: none;
-    border-radius: 3px; }
+    border-radius: 3px;
+    border: 1px solid #efefef; }
+    .boxes .boxy-box .text-area {
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      height: 190px;
+      padding: 15px  30px 30px 30px;
+      color: #424242; }
+      .boxes .boxy-box .text-area p {
+        line-height: 1.5; }
     .boxes .boxy-box p {
       font-size: 14px;
       text-align: left;
-      padding-top: 15px; }
+      padding-top: 10px; }
     .boxes .boxy-box.active {
       display: block; }
     .boxes .boxy-box.pink {
       background: #ED418F url("../imgs/symbol_black_trans.png") bottom right no-repeat;
       background-size: cover;
       color: white; }
+    .boxes .boxy-box.grey {
+      background: #D5D5D5 url("../imgs/symbol_black_trans.png") bottom right no-repeat;
+      background-size: cover;
+      color: white; }
+      .boxes .boxy-box.grey p, .boxes .boxy-box.grey h4, .boxes .boxy-box.grey span {
+        color: white; }
+      .boxes .boxy-box.grey .tag {
+        color: white; }
     .boxes .boxy-box.stats {
       background: #e91c79;
       color: #910e49; }
     .boxes .boxy-box .time {
-      text-transform: uppercase;
       font-size: 14px;
-      margin-top: 20px;
-      letter-spacing: 0.08em; }
+      margin-top: 10px;
+      font-weight: 400; }
     .boxes .boxy-box .number {
       font-size: 60px;
       font-weight: 800; }
     .boxes .boxy-box .tag {
-      height: 20px;
-      top: 0;
+      top: 0px;
       left: 0;
-      padding-bottom: 10px;
-      display: block; }
+      padding: 12px 20px 10px 30px;
+      display: block;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      position: absolute;
+      color: white;
+      background: #e51674; }
     .boxes .boxy-box.bg {
-      background: url("../imgs/bg_bw.jpg") top right;
+      background: url("../imgs/bg_bw_3.jpg") top right;
       background-size: cover;
       color: #424242;
       padding-top: 140px; }
@@ -642,12 +667,16 @@ Filtering
         .boxes .boxy-box:nth-child(4) {
           margin-right: 0; } }
     .boxes .boxy-box .content-area {
-      padding: 40px 30px; }
+      padding: 40px 30px;
+      position: relative; }
+      .courses .boxes .boxy-box .content-area {
+        text-align: center; }
     .boxes .boxy-box h4 {
       font-size: 25px;
       font-weight: 600;
-      padding-bottom: 10px;
-      margin-top: 10px; }
+      padding-bottom: 5px;
+      margin-top: 25px;
+      line-height: 1.2; }
     .boxes .boxy-box .btn-area {
       position: absolute;
       bottom: 0;
@@ -655,7 +684,8 @@ Filtering
       padding: 10px;
       transition: all 0.5s; }
       .courses .boxes .boxy-box .btn-area {
-        opacity: 0; }
+        opacity: 0;
+        background-color: white; }
     .boxes .boxy-box:hover .btn-area {
       opacity: 1; }
     .boxes .boxy-box button {
@@ -663,10 +693,8 @@ Filtering
       width: calc(50% - 5px); }
       .boxes .boxy-box button:nth-child(2) {
         float: right; }
-<<<<<<< HEAD
       .books .boxes .boxy-box button {
         width: 100%; }
-=======
     .boxes .boxy-box.redovisning-one {
       background: #ffffff url(../imgs/entreprenorer-som-redovisare.jpg) no-repeat left -250px;
       background-size: cover; }
@@ -697,7 +725,6 @@ Filtering
       width: 50%;
       bottom: 2%;
       right: 2%; }
->>>>>>> 46614ec14fad4ca34a8d119c5a40ac4b4cc0b23f
 
 /*
 Box Teasers

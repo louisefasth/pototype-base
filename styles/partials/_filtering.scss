@@ -6,7 +6,7 @@ Filtering
 .filters {
 	with:100%;
 	overflow:hidden;
-	text-align: center;
+	text-align: left;
 
 	.filter-label {
 		color:$text-color;
@@ -14,29 +14,30 @@ Filtering
         font-size: 20px;
         font-weight: 200;
 
-
 	}
 
 	ul {
-		margin: 10px 0;
+		margin: 10px 0 0 0;
 		overflow: hidden;
 
 
 
 		li {
 			display:inline-block;
-			padding:8px 20px 8px 40px;
+			padding:8px 20px 8px 0px;
 			margin-right:10px;
 			text-align: left;
+			margin-bottom: 10px;
 
 
 			&.filterbox {
 				border:1px solid darken(#efefef,30%);
 				border:1px solid darken($background-pink,3%);
 				transition: all 0.5s;
-				min-width: 100px;
+				min-width: 120px;
 				border-radius:1px;
 				opacity: 0.4;
+				padding:8px 20px 8px 40px;
 
 
 				&.active {
