@@ -24,7 +24,7 @@ Filtering
 
 		li {
 			display:inline-block;
-			padding:8px 20px 8px 0px;
+			padding:8px 10px 8px 40px;
 			margin-right:10px;
 			text-align: left;
 			margin-bottom: 10px;
@@ -34,7 +34,7 @@ Filtering
 				border:1px solid darken(#efefef,30%);
 				border:1px solid darken($background-pink,3%);
 				transition: all 0.5s;
-				min-width: 120px;
+				min-width: 90px;
 				border-radius:1px;
 				opacity: 0.4;
 				padding:8px 20px 8px 40px;
