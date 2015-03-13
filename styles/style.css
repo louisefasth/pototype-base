@@ -716,14 +716,19 @@ Filtering
       .books .boxes .boxy-box button {
         width: 100%; }
     .boxes .boxy-box.redovisning-one {
-      background: #ffffff url(../imgs/entreprenorer-som-redovisare.jpg) no-repeat left -250px;
+      background: #ffffff url(../imgs/entreprenorer-som-redovisare.jpg) no-repeat left -210px;
       background-size: cover; }
     .boxes .boxy-box.redovisning-two {
-      background: #ffffff url(../imgs/ifrs-volymen-2014.jpg) no-repeat left -250px;
+      background: #ffffff url(../imgs/ifrs-volymen-2014.jpg) no-repeat left -210px;
       background-size: cover; }
+    .boxes .boxy-box .tag-blue {
+      background: #009bf8; }
     .boxes .boxy-box .title {
+      background: white;
       position: absolute;
-      left: 20px;
+      width: 100%;
+      padding-left: 20px;
+      left: 0;
       top: 190px;
       font-size: 28px;
       font-weight: 100; }
