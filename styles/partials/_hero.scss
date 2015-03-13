@@ -56,6 +56,16 @@ Hero
         bottom: 5vh;
         position: absolute;
         max-width: 40%;
+
+        .citat{
+          font-size: 25px;
+          color: #333;
+          font-weight: 300;
+          font-style: italic;
+          width: 80%;
+          display: inline-block;
+          margin-bottom: 40px;
+        }
       }
 
        &.skatt {
