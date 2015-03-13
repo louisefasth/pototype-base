@@ -455,13 +455,23 @@ Hero
     min-height: 50vh; }
   .hero h2 {
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 800; }
+  .hero .san {
+    font-family: Times;
+    font-size: 40px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 5px; }
+    .hero .san.first {
+      left: -35px; }
   .hero p {
     color: white;
     font-size: 23px;
     padding: 10px 0;
     line-height: 1.4; }
+  .hero .redovisning p {
+    font-size: 21px; }
   .hero button {
     margin-top: 20px;
     padding: 8px 40px; }
@@ -470,13 +480,22 @@ Hero
     position: absolute;
     max-width: 40%; }
     .hero .text-area .citat {
-      font-size: 25px;
-      color: #333;
+      font-size: 40px;
+      font-family: "Open sans", "Source sans pro", "Arial";
       font-weight: 300;
-      font-style: italic;
-      width: 80%;
+      color: white;
+      width: 140%;
       display: inline-block;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      line-height: 1.4;
+      padding-top: 20px;
+      padding-top: 60px; }
+    .hero .text-area .author {
+      display: block;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      padding-top: 15px; }
   .hero.skatt {
     background: url("../imgs/bg_bw_2.jpg") top center;
     background-size: cover; }
