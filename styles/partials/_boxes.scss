@@ -166,9 +166,19 @@ Filtering
 
 			&.double {
 				width:calc(50% - 25px);
+
 			
 				h4 {
-					font-size:40px;
+					float: left;
+					font-size:50px;
+					font-weight: 200;
+					color: white;
+					margin-top: 0;
+				}
+
+				.time{
+					float: left;
+					color: white;
 				}
 			}
 
@@ -250,7 +260,7 @@ Filtering
 		.teaser-text{
 			float: left;
 			position: absolute;
-			top: 230px;
+			top: 250px;
 			margin: 0 20px;
 			font-size: 14px;
 			line-height: 20px;
